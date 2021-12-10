@@ -32,7 +32,34 @@ Java contain three main components -
 
 
 # Object-Oriented Programming(OOPs)
-Java is Object-oriented Programming language.
-OOPs means program using object to stand for data & methods.Here we create objects to interact with each other to change data in those objects & to work in a way that user want.
-It help developers by allowing for code to be easily reused by other part of program.
-OOPs languages - C++, Java, Python, Ruby, Perl, PHP.
+- OOPs is a methodology to design a program using classes and objects.
+- OOPs means program using object to stand for data & methods.
+- Here we create objects to interact with each other to change data in those objects & to work in a way that user want.
+- It help developers by allowing code to be easily reused by other part of program.It simplifies software development & maintenance.
+- OOPs languages - C++, Java, Python, Ruby, Perl, PHP.
+
+### Object - 
+- Any entity that has state & behaviour is known as object. It can by physical or logical.
+- Any object can be defined as instance if class.
+- When object is created memory is allocated for it.
+
+### Class - 
+- Collection of object is called as Class.
+- It is logical entity.
+- Memory is not allocated when class is created.
+
+## Example for object and class - 
+lets consider calculator & it's different operations such as additon, substraction, multiplication & division.
+- Here we could see that calculator is class & operations are object.
+
+
+
+
+
+
+
+
+
+
+
+
