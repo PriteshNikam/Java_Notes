@@ -107,8 +107,7 @@ lets consider calculator & it's different operations such as additon, substracti
 
 ### 3) Abstraction -
  - Hiding internal details & showing functionality is known as abstraction.
- - Abstract class & interface are used to achieve abstraction.
- - - It is technique by which we can hide the data which is not required to user by which user can only work with required data.
+ - It is technique by which we can hide the data which is not required to user by which user can only work with required data.
  - Two ways to achieve abstration -
    #### I. *Abstract class.
    #### II. *Interface.
@@ -127,8 +126,41 @@ lets consider calculator & it's different operations such as additon, substracti
            - Bank account - your account balance is only visible to you, it's not public.
 
 
+# Function & Method - 
+- Both are same things depend on how we declare & call them.
+- They are group of code which need to be used again & again, so we declared them once and call as required.
 
+## Function - 
+   - It is nothing but a particular task to be performed when called/invoked.
+   - It can be called/invoked without object
+   - Java is Object Oriented Programming language so function need to be declared inside the class so it is called as method.
+   - In C, Python function can ne declared outside class.
+   - Example
+      - function(); 
+      - fun(x,y); // x & y are arguments. 
 
+## Method - 
+   - It is member of class or we could say it is object of class.
+   - Method need to be declared inside class so it need object to invoke.
+   - Example - 
+      - Math.pow(x,y); // x and y are arguments.
+      - class.method(a);  // a is argument.
+
+# Naming Convention - 
+  - All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).
+  - After the first character, identifiers can have any combination of characters.
+  - A keyword cannot be used as an identifier, because keywords are reserved words for some function.
+  - Examples of legal identifiers: age, $salary, _value, __1_value.
+  - Examples of illegal identifiers: 123abc, -salary.
+  - For *class* Pascal Convetion is used, name should start from a capital case letter and long names should use camel casing. 
+    - For example: AddTwoNumbers
+  - For *Object* camel case convention is used, name should start from lower case letter and long names should use camel casing. 
+    - For example: addTwoNumbers
+   
+  ### Note - 
+  Why do we nedd Naming convention??
+  - So basically their are some reserved keyword, so they can't be used again.
+  - Make's easy to understand & read code. 
 
 
 
