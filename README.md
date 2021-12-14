@@ -163,6 +163,28 @@ lets consider calculator & it's different operations such as additon, substracti
   - Make's easy to understand & read code. 
 
 
+# Data Types - 
+1. Primitive data type.
+2. Non - primitive data type.
+
+- Java is statical type language, variables must be declared before use.
+
+![image](https://user-images.githubusercontent.com/83751098/146010840-4d607c40-bf2f-49ab-8b10-608ccd7a3247.png)
+
+## *Primitive data types* - 
+There are 8 primitive data types. byte, int, short, long, double, float, char, boolean.
+- byte -   1 byte is equals to 8 bit.
+- short -  1 short is equals to 2 bytes.
+- int -    1 int is equals to 4 bytes. 
+- long -   1 long is equals to 8 bytes.
+- double - 1 double is equals to 8 bytes.
+- char -   1 char is equals to 2 bytes.
+- boolean - size depend on JVM.
+
+## *Non primitve data types* - 
+Array, String, class, interface are non primitive data types.
+
+
 
 
 
