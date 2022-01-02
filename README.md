@@ -184,8 +184,46 @@ There are 8 primitive data types. byte, int, short, long, double, float, char, b
 ## *Non primitve data types* - 
 Array, String, class, interface are non primitive data types.
 
+# Precedence Of Operators -
+ - Basically it means giving priority to perform operations on operands.
+ Here are some operartor precedence - 
+ - Addition(+), Substract(-) has precedence of 11.
+ - Multiplication(*), Division(/), Modulus(%) has precedence of 12.
+ - Increment(++), Decrement(--) has precedence of 13.
+ - Parenthesis (), square bracket [], has presedence of 14.
 
-
-
-
-
+# Increment & Decrement - 
+  ## Increment (++) :
+  - Increase value of variable by one.
+  - example: i++
+       - int a = i++;     // 1st assign value of i to a & then increment the i value by one.
+       - int b = ++i;    // 1st increment the value of i by one & then assign to b.
+     
+  ## Decrement (--) : 
+  - Decrement value of variable by one.
+  - example: i--
+       - int a = j--;    // 1st assign value of j to a & then decrement the j value by one.
+       - int b = --j;    // 1st decrement the value of j by one & then assign to b.
+ 
+# String - 
+  - Strings are non-primitive data types.
+  - Strings are immutable(cannot be changed).
+  - " " data written inbetween in this double quotes are considered as String.
+  - String pool area is storage area for strings.
+  *note - By using some operations string data can be change but it creates new String in memory & assign new edited value.*
+  
+  ## What is difference in String name = "Vijay"; & String newName = new String("joseph"); 
+  --> String are used to store non primitive data types to make optimized java developers introduced area to store Strings which is String pool area.
+   ### Heap area - every variable get stored here.
+   ### String pool area - it utilize old strings.
+   example - suppose you store "Apple", it will 1st find whether same kind of data is present in string pool area or not if yes then it will directly assign old "Apple" address             to new one & if not then create new String of this.
+   
+      String fruit1 = "Apple";  // stored in heap are.
+      
+      String fruit2 = new String("Mango");  // stored in String pool area.
+      
+      So, 
+         fruit1 != fruit2  // they are not equal because one is stored in heap area and other in string pool area.(address is not same). 
+         fruit1.equals(fruit2) // here they are equal because data is same which is "Apple". 
+        
+  
