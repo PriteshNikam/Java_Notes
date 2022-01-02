@@ -225,5 +225,6 @@ Array, String, class, interface are non primitive data types.
       So, 
          fruit1 != fruit2  // they are not equal because one is stored in heap area and other in string pool area.(address is not same). 
          fruit1.equals(fruit2) // here they are equal because data is same which is "Apple". 
-        
+  
+  #### *Note - you can find String operations & programs code in String folder*
   
