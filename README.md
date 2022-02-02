@@ -229,3 +229,77 @@ Array, String, class, interface are non primitive data types.
   #### *Note - you can find String operations & programs code in String folder*
    - Java_Coding_Questions/Basic_Codes/String/
   
+# Conditional statements - 
+## if-else statement - 
+   - It check for condition in if statement, if it satisfies that then it execute if block code & if not satisfied then it execute code in else block.
+   - If user want multiple checks then simply use else if, you will under this example below.
+   
+   Syntax 1- 
+        
+      if(condition){
+         // if condition is satisfied then this block code is executed.
+      }else{
+         //when if condition is not satisfied.
+      }
+   
+   Syntax 2-
+       
+      if(condition 1){
+          // condition 1 is satisfied.
+      }else if(condition 2){
+          // condition 2 is satisfied.
+      }else if(condition 3){
+          // condition 3 is satisfied.     
+      }else{
+          // when all condition are not satisfied.
+      }
+      
+ ## Switch statement - 
+   - It is used when user have to make choice between number of alternatives.
+   
+   Syntax -
+      
+     switch(expression) {
+         case a:
+              // block of code
+              break;
+         case b:
+              // block of code
+              break;
+         default:
+              // block of code
+        }
+     
+   - In switch case break keyword is very important because if any case is satisfied then that code block is executed & it should exit after that else it will check for other        cases, for this break keyword is used after particullar code in case.
+     
+  # Loops - 
+   
+   ## 1. while loop - 
+   - while loop execute block of code till some specific condition is satisfied.
+   - In while loop 1st condition is check then code is executed.
+   
+   Syntax - 
+        
+        while(condition){
+              // block of code
+        }
+        
+   ## 2. do-while loop -
+   - It is same as while loop just it executed code 1st and then check for condition, so at least once code is executed.
+   
+   Syntax - 
+       
+       do{
+         // block of code
+       }while(condition)
+       
+   ## 3. for loop - 
+   - In for loop we know how many number of times loop will run, basically here we specify number of times.
+   
+   Syntax - 
+   
+     for(initialize; upto; inrement/decrement){
+          // block of code
+     }
+      
+   
