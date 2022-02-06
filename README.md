@@ -302,4 +302,54 @@ Array, String, class, interface are non primitive data types.
           // block of code
      }
       
+   ### for-each loop -
+   - for-each loop is used for traverse over a array without initializing & declaring loop counter variable.
+   - Here you simply declare a single variable same as array data type and traverse over it.
+   - it is commonly used to traverse over a array or collections.
    
+   Syntax -
+      
+       for(data_type var: ar){   // here ar is array and data_type is same as array data_type.
+            // block of code 
+       }
+  
+  # Arrray - 
+   - It is Collections of simillar type of data.
+   - Elements are stored in continious memory location.
+   - Array is static( unchangable in size), it means it has fix length.
+   - In array we cannot directly add elements, we need to specify index in array.
+
+   ## *3 types declaration of array* - 
+   
+   1. Here declaration & memory allocation is done at same time.
+   
+    int[] marks = new int[5];   
+   
+   2. Here 1st array is declared & after memory allocated.  
+     
+    int[] marks;
+    marks = new int[5];
+   
+   3. Here declaration,initilization,memory allocation is done at same time.
+     
+     int[] marks = {1,2,3,4,5};
+   
+   
+   Note - Suppose you want to print array in one line of code then use - 
+   Arrays.toString(marks);
+    
+    example -
+      System.out.println(Arrays.to String(marks));
+   
+   # Multi dimentionla Array - 
+   - it is array of array.
+   - this type is mainly used for matrix.
+   
+    example - 
+     int[][] mat = new int[3][3]; // it is 2x2 matrix(2D array).
+     int[][][] mat2 = new int[3][3][3]; // it is 3x3 matrix(3D array).
+   
+   ## Valid & array declaration -
+    int a[] = new int[5];  
+    int a[][] = new int[2][2];
+     
