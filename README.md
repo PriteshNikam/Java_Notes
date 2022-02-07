@@ -349,7 +349,42 @@ Array, String, class, interface are non primitive data types.
      int[][] mat = new int[3][3]; // it is 2x2 matrix(2D array).
      int[][][] mat2 = new int[3][3][3]; // it is 3x3 matrix(3D array).
    
-   ## Valid & array declaration -
-    int a[] = new int[5];  
-    int a[][] = new int[2][2];
-     
+   ## Valid & invalid array declaration -
+    int a[] = new int[5];           // valid
+    int a[][] = new int[2][2];      // valid
+    int a[][] = new int[3][];       // valid
+    int a[][][] = new int[4][3][];  // valid
+    int a[][] = new int[][3];       // invalid because you need to 1st declare 1st row size.
+    int a[][][] = new int[][2][2];  // invalid 
+    int a[][][] = new int[3][][3];  // invalid
+    
+   # Function, Method & Constructor -  
+   
+   ## 1. Function -       
+   - no need of object to invoke you can simply call function anywhere.   
+     ex.- fun(); 
+          fun(x,y);
+   
+   ## 2. Method - 
+   - method need object to invoke.
+     ex.- class_name.method_name(a,b);
+        - Math.pow(x,y);
+           
+   ### Notes - 
+   - In java method should be inside a class.
+   - In C it may be out side of class & called as function.
+   - Python is OOP & procedural language so it can hace both fun & method. 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
