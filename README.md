@@ -369,6 +369,30 @@ Array, String, class, interface are non primitive data types.
    - method need object to invoke.
      ex.- class_name.method_name(a,b);
         - Math.pow(x,y);
+   
+   ## 3. Constructor - 
+   - It is used to initialize the instance variables.
+   - It has same name as class name.
+   - It donot has return type.
+   - It is automatically called when object of class is created.
+   ## *Types* - 
+   1. Default constructor(no parameter) - 
+   2. Parametrized constructor - 
+   
+   ## Constructor Inheritance - 
+   - When it comes to inheritate constructor two keywords are mainly used which are this & super.
+   - this keyword is used to invoke constructor in same class.
+   - super keyword is used to invoke constructor from other class.
+   example - 
+          
+    class Base{
+           Base(){// default constructor }
+           Base(int a, int b){ // Parameterized constructor}
+    }
+    class Derived(){
+           Derived(){// default constructor }
+           Derived(){// Parameterized constructor }
+    }
            
    ### Notes - 
    - In java method should be inside a class.
