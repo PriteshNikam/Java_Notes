@@ -387,11 +387,14 @@ Array, String, class, interface are non primitive data types.
           
     class Base{
            Base(){// default constructor }
-           Base(int a, int b){ // Parameterized constructor}
+           Base(int a){ // Parameterized constructor}
     }
     class Derived(){
-           Derived(){// default constructor }
-           Derived(){// Parameterized constructor }
+           Derived(){
+              // default constructor 
+              super(0); // this will invoke Base(int a) constructor.
+           }
+           Derived(int x,int y){// Parameterized constructor }
     }
            
    ### Notes - 
@@ -400,11 +403,39 @@ Array, String, class, interface are non primitive data types.
    - Python is OOP & procedural language so it can hace both fun & method. 
     
     
+   # Method Overloading - (Static binding)
+   - Methods having same name with different signature in a same class.
+   - Signature includes number of arguments, types of arguments, order of arguments, return type is not part of signature.
+   - Overloading occures during compile time.
+   - It is faster because they are bonded during compile time & no check or binding is required during runtime.
+   - example - 
+       
+         class Calculator{
+               public int add(int a,int b){
+                    return a+b;   // this fun perform addtion for 2 numbers
+               }
+               public int add(int x,int y,int z){   // this fun perform addtion for 3 numbers
+                    return x+y+z;
+               }
+         }
+         class Main{
+            public static void main(String[] args){
+                  int a=1;
+                  int b=2;
+                  int x=3;
+                  int y=4;
+                  int z=5;
+                  Calculator cal = new Calculator();
+                  int r1 = cal.add(a,b); // it will call method with 2 parameters.
+                  System.out.println(r1);
+                  int r2 = cal.add(x,y,z); // it will call method with 3 parameters.
+                  System.out.println(r2);
+            }
+         }
     
-    
-    
-    
-    
+   # Method overrinding - (Dynamic binding)
+   - Methods having same name & signature in different class.
+   - 
     
     
     
