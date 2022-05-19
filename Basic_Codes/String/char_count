@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;    // this means that you import all the classes of the utility package in the program.
 
 // program to cout a specific Character in String.
 // here we find count of char 'a' in String "Maharashtra"
