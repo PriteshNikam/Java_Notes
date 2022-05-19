@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 // O/P - "Satara in live My"
 // here we have used 3 diff. method to do this.
 
-public class reverse_by_words {
+public class Main {
 
     // 1. using split method
     
