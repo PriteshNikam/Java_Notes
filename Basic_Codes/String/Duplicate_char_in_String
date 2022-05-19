@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;  // this means that you import all the classes of the utility package in the program.
 
 // program to count repeated char in String.
 // this program also count space in String.
