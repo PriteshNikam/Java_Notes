@@ -435,7 +435,41 @@ Array, String, class, interface are non primitive data types.
     
    # Method overrinding - (Dynamic binding)
    - Methods having same name & signature in different class.
-   - 
+   - Overrring occurs during runtime.
+   - Here we can inherit properties of parent class and can even change them in base class.
+   - example - 
+           
+           import java.util.*; 
+           class A{ 
+              public void run(){ 
+                     System.out.println("1st method of A"); 
+              }
+              public void speed(){ 
+                     System.out.println("2nd method of A"); 
+              } 
+           } 
+
+           class B extends A{ 
+              public void run(){ 
+                     System.out.println("overring method of A in B"); 
+              } 
+              public void slow(){ 
+                     System.out.println("2nd method of B"); 
+              } 
+           } 
+           class Main { 
+                 public static void main(String[] args) { 
+                           A a = new B(); 
+                           B b = new B(); 
+                           a.run(); // it calls method from base class because it is overridding method.
+                           a.speed(); 
+                        // a.slow();   // this method has error because it donot exists in class A so it need another objet to invoke. 
+                           b.slow(); 
+                 } 
+           } 
+
+ 
+          
     
     
     
