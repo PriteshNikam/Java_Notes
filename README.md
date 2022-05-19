@@ -468,12 +468,27 @@ Array, String, class, interface are non primitive data types.
                  } 
            } 
 
- 
-          
+   # Recursion - 
+   - Function which calls itself.
+   - It has base condition where function get breaked.
+   - And if that condition is not statisfied then function call itself again.
+   - example - 
+            
+         public int fun(int n){
+          int temp = n;
+          if(temp==1){  // base condition.
+              return 1;
+           }
+          return temp* fun(n-1);
+         }
     
     
+   - Above example is of find factorial of n number by using recursion.
+   - Function call it self until base condtion is not satisfied which is (temp == 1). 
+   - Until temp becomes 1 function decrease temp value by 1 & multiply with temp.
+   - you may refer below video link for better understanding of recursion -
+   - https://youtu.be/Mr9MVpSoTGk 
     
-    
-    
-    
+   
+   
     
