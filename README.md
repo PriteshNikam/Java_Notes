@@ -609,8 +609,22 @@ Array, String, class, interface are non primitive data types.
              }
          }
    
-   #  
-    
+  # Access Modifiers - 
+   - It determine wether other class can use a particullar file or invoke a particullar method.
+   - this can be done using keywords such as public,private,protected,defalut(no need to define).
+   
+   ### private - 
+   - access only in particullar class.
+   ### protected  - 
+   - only in particullar package but can be accessed by using chilg class.
+   ### public - 
+   - from any where any how you can access.       
+   ### default  -
+   - can be accessed in class & package but particullar package & class.
+          
+   ### *Note* -
+   -  A class cannot be private or protected except nested class.
+   -  outside package you can access protected & public by using subclass(child class).    
     
     
     
