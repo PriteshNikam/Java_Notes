@@ -626,10 +626,20 @@ Array, String, class, interface are non primitive data types.
    -  A class cannot be private or protected except nested class.
    -  outside package you can access protected & public by using subclass(child class).    
     
+   # Multithreading - 
+   - Multiprocessing & multithreading both are used to achieve multitasking.
+   - Thread uses shared memory area.
+   - A thread is light weight where as process in heavyweight.
     
     
-    
-    
+![image](https://user-images.githubusercontent.com/83751098/169544487-9c689562-ffdb-4938-aa29-a93584cc670d.png)
+
+![image](https://user-images.githubusercontent.com/83751098/169544550-cfefed04-433a-4102-a341-3d49f41793a0.png)
+
+![image](https://user-images.githubusercontent.com/83751098/169544587-9cbf73f3-175b-4085-8106-ba70ce24cd31.png)
+
+![image](https://user-images.githubusercontent.com/83751098/169544643-aed634c0-1b65-4178-bb2c-e867824523ef.png)
+
     
     
     
