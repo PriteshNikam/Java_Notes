@@ -641,7 +641,15 @@ Array, String, class, interface are non primitive data types.
 ![image](https://user-images.githubusercontent.com/83751098/169544643-aed634c0-1b65-4178-bb2c-e867824523ef.png)
 
     
-    
+ ### Thread can be created by two ways - 
+   - 1) By extending thread class.
+   - 2) By implementing Runnable interface.
+
+![image](https://user-images.githubusercontent.com/83751098/169553617-bf57af26-c92a-4158-b0c5-b7d862c7ffa4.png)
+
+
+
+   
     
     
     
