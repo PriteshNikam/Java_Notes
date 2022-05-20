@@ -490,5 +490,137 @@ Array, String, class, interface are non primitive data types.
    - https://youtu.be/Mr9MVpSoTGk 
     
    
-   # 
+   # Dynamic Method Dispatch - 
+   - One object work for two different class.
+   - All methods can be called in super class.
+   - Only overriding methods in sub class can be called.
+    
+   - example - 
+        
+         class A{
+               Method(){
+                   // some line of code.
+               }
+               Method2(){
+                   // some line of code. 
+               }
+         }
+         class B extends A{
+               Method(){   // overriding method from A.
+                     // method can modified from class A.
+               }
+               Method3{
+                     // some line of code.
+               }
+         }
+         
+         public class Main{
+           public static void main(String[] args){
+                  A p = new B();
+                  p.method();    // method from class B.(because overriding)
+                  p.method2();   // method from class A.
+                  p.method3();   // this will throw error because it is not overrinding method. 
+           }
+         }
+    
+   # Abstract - 
+   - It is used to achieve *Inheritance*.
+   - abstract keyword is used to declare class & method as abstract.
+   - Abstract class can contain abstract & non-abstract method so that's why anstract cannot be used for 100% abstraction.
+   - More suitable for code reusable and evolution prespective.
+   - multiple abstract cannot be used to create single class.
+   - When we use inheritance we use *extends* keyword.
+    
+   *abstract method* -
+        Method is declared without implementation.
+   
+   *abstract class* - 
+        - Class have abstract methods & it self declared as abstract.
+        - it can also have non-abstract method.(complete methods)
+         
+   - example - 
+         
+         abstract class Animal{
+               
+               public abstract color();   // abstract method.
+               
+               public void type(){       // non-abstract method.
+                    System.out.println("Domestic");
+               }
+         }
+         
+         class Dog extends Animal{
+               public void color(){
+                   System.out.println("color of dog is black");
+               }
+         }
+         
+         public class Main{
+                public static void main(String[] args){
+                       Dog d = new Dog();
+                       d.color();
+                       d.type();
+                }
+         
+         }
+      
+     
+   # Interface - 
+   - Java donot supprort multiple inheritance so to achieve this developers introduced interface.
+   - This can be used to achieve multiple inheritance & 100% abstraction.
+   - 100% abstraction because it interface only has abstract methods.
+   - Multiple interfaces can be used to create single class.
+   - to achieve interface we use *implements* keyword.
+     
+   example - 
+     
+         interface Bike{
+                void speedUp();
+                void speedDown();
+         }
+         interface Car{
+                void color();
+                void name();
+         }
+         classs Vehicle implements Bike, Car{
+                  
+                  // here all method declaration should be public.
+                  
+                  public void speedUp(){ 
+                      System.out.println("Increase  speed");
+                  }
+                  public  void speedDown(){
+                      System.out.println("Decrease speed");
+                  }
+                  public void color(){
+                      System.out.println("Color of vehicle is white");  
+                  }
+                  public void name(){
+                      System.out.println("name of car is Bike_Car"); 
+                  }
+         }
+         public class Main{
+             public  static void main(String[] args){
+                 Vehicle v = new Vehicle();
+                 v.speedUp();
+                 v.speedDown();
+                 v.color();
+                 c.name();
+             }
+         }
+   
+   #  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
