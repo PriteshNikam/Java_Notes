@@ -770,11 +770,39 @@ Array, String, class, interface are non primitive data types.
     - Stack - A LIFO data structure.
     - hash Map - for storing key-value pairs. 
   
+  - Collection is available in java util package(import java.util.Collection).
+  - It also provides some static methods for sorting,Searching, etc.
+ 
+  ## ArrayList - 
+  - import java.util.ArrayList;
+  - Elements are stored in contiguous location.
+  - You could directly access elements.
+  - ArrayList size incerease by 1.5 times.
+  - better to access data with O(1) time complexity.
+  - Syntax - 
+    
+        ArrayList<Integer> ar = new ArrayList<>();
+  - Data type can be of Float,Boolean,String.
+  - This data type declaration is known as generics, if this is not decalred then that ArrayList can store any kind of data.
+  - Syntax - 
+       
+        ArrayList<> ar = new Aarraylist<>();
+  - But this can give many problems, so generics are important.
   
+  ## LinkedList -
+  - import java.util.LinkedList;
+  - Elements are not store in contiguous location.
+  - Element have data & address part.
+  - To access element need to traverse from 1st node.
+  - deletion & insertion is fast.
+  - Better to manipulate data.
+  - To access element time complexity O(n/2).
+  - Syntax - 
+     
+        LinkedList<String> l = new LinkedList<>();
   
-  
-  
-        
+   ## Vector - 
+   - Same as ArrayList, but it is Synchronized.
         
         
         
