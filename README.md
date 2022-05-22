@@ -648,11 +648,133 @@ Array, String, class, interface are non primitive data types.
 ![image](https://user-images.githubusercontent.com/83751098/169553617-bf57af26-c92a-4158-b0c5-b7d862c7ffa4.png)
 
 
-
+# Error & Exception - 
+  ## Errors : 
+  - Because of error program behave abnormal, show's error or wrong output.
    
+   *Some main types of errors-*
+   
+   ### Syntax error -
+   - Missing things or extra things in code.
+   - ex - ;,{,} or extra declaration.
+   
+   ### Logical error - 
+   - Code runs but theirs is some something missing / not running.
+   - program get compiled but wrong output.
+   - ex - 
+       - wrong calculation.
+       - bug in software.
+   
+   ### Runtime error - 
+   - Program is correct get compiled but while getting input or input become invalid & program shows error.
+   - ex - adittion of two no. & 1st no. is int & 2nd no. is char. 
     
+   ## Exception - 
+   - An exception is an event that occurs when a program os execited disniting the normal flow of instructions.
+   - two types of exception - 
+     - 1) Checked Exception (compile time exception)
+     - 2) Unchecked Exception (run time exception)
+   - Exceptions are handled by using try-catch block.
+   
+   Syntax - 
+   
+    try{
+      // code which might have error.
+    }
+    catch(Exception e){
+      // if code has error then it will be catched here and programer can handle that error.
+    }
+       
     
+   Example - 
+   
+    try{
+     // code which might have error.
+    }
+    catch(ArithmeticException e){
+       System.out.println(e); // this will print arithmetic exception.
+    }
+    catch(IndexOutOfBoundException e){
+       System.out.println); // this will print IndexOutOfBoundException exception.
+    }
+    catch(Exception e){  // this will catch any kind of error.
+       System.out.println(e); 
+    }
+     
+     
+   ## Exception in class - 
+   - Here throw keyword is used to throw exception in class to handle the error.
+   - ex - 
+      throw new MyException();
+   - By this you can display what you want when error occurs.
+
+   ### Throw & Throws keyword - 
+   ### *throw -*
+   - Throw keyword is used when you know some error is gonna occur.
+   - So for this you create a class of that Exception which is extends by Exception & you display your exception or own error.
+     
+    class MyException extends Exception{
+       public string toString(){
+          return "Radius cannot be neative";
+       }
+       public String getMessage(){
+          return "Radius cannot be negative"; 
+       }
+    }
+    public class Main{
+      public static void main(String[] args){
+        if(r<0){
+           throw new MyException();
+        }
+        double result = Math.PI*r*r;
+        return result;
+      }
+    }
     
+  ### *throws -* 
+  - Throws keyword is used to declare an exception this gives info. to prgrammer that there can be exception so it better to be prepared with catch block.
+ 
+ - ex - 
+  
+        public void Calculate(int a,int b) throws MyEception{
+            // code
+        }
+     
+  ### finally block - 
+  - it is used when you want to execute particullar block of code at end of code not matters it gives error or not.
+  - Syntax - 
     
+        finally{
+          //code
+        }
+   - If you donot want to execute finally block use *System.exit(0)* then code gets breaked at that line of code & finally block is not executed. 
     
-    
+  
+  # Collection Framework - 
+  -  A collection represents a group of object collections provide classes & interfaces for us to be able to write data quickly & efficiently.
+  
+  *Why we need collection?*
+  -> We need collection for efficent storage & better manipulation of data in java.
+  ex - 
+    we use array to store data, but what if we want to - 
+     - resize array?
+     - insert element?
+     - delete element?
+     apply certain operartions to change?
+   - So that's why we use collection framework.
+   - Collections are available as classes & interface.
+  
+  - commonly used collections in java ->
+    - Array list - for variable size collection.
+    - Set - for distinct collection.
+    - Stack - A LIFO data structure.
+    - hash Map - for storing key-value pairs. 
+  
+  
+  
+  
+  
+        
+        
+        
+        
