@@ -803,6 +803,94 @@ Array, String, class, interface are non primitive data types.
   
    ## Vector - 
    - Same as ArrayList, but it is Synchronized.
-        
+   - Methods are synchronized which means suppose add method is executed on vector V by a thread 1 then it is locked, so other threads are not able to perform 
+     add function until thread 1 has completely executed it. 
+   - By this we could say vector is thread safe.
+   - Syntax - 
+       
+         Vector<Float> V = new Vector<>();
+  
+   ## Stack - 
+   - It is Last In First Out(LIFO).
+   - it extends vector.
+   - *Methods of stack -*
+      - push(); -> to add element.
+      - pop(); -> to delete element.
+      - peek(); -> return top element/head/last element added.
+      - search(); -> to search element in stack.
+      - empty(); -> to check stacj is empty or not.
+    
+   ## Queue -
+   - It is First In First Out(FIFO).
+   - *Methods of Queue ->*
+       - *Throw exception ->* 
+        - add(); ->  add element.
+        - remove(); -> delete element.
+        - element(); -> to see head.
+       - *return false/null methods ->*
+        - offer(); -> to add element.
+        - poll(); -> delete 1st element.
+        - peek(); -> to see head.
+    
+   ## ArrayDeque - 
+   - Array double ended queue.
+   - It allows to add or remove an element from both sides.
+   - This implement queue.
+   - So if we use other methods it behave like queue.
+   - Faster than stack because it is not synchronized.
+   - *methods of ArrayDeque ->*
+     - addFirst(); -> add from front.
+     - removeFirst(); -> remove from front.
+     - getFirst(); -> see 1st element from front.
+     - addLast(); -> add from rear.
+     - remove(); -> remove element from rear.
+     - getLat(); -> see 1st element from rear.
+    
+   ## Priority Queue -
+   - Here every element is provided with priority.
+   - If priority of element are same then they are served as queue.
+   - Here element with highest priority is removed 1st.
+   - When data is added such as String,char,int etc in priority queue it donot maintain inserting order & when you remove element from it,
+     it removes according order(chronological order).
+   - This happens because predefined comparator in priority queue.
+   - To remove element according to user need to define comparator.
+
+   ## Set Interface - 
+   - Donot allowed duplicate value.
+   - Constant time for insertion & delection.
+   - here insertion & delection is constant time.
+   - *Methods of Set ->*
+     - add(ele);
+     - addAll(Collection);
+     - remove(ele);
+     - removeAll();
+     - clear();
+     - size();
+     - contains();
+     - containsAll();
+     - isEmpty();
+     - toArray();
+     
+   ## HashMap -
+   - It contains two elements one is key other is value.
+   - Syntax - 
+       
+         Map<Integer,Integer> map = new HashMap<>();
+         
+         Map<String,Integer> map2 = new HashMap<>();
+    
+   - put(key,value);
+   - putAll();
+   - putIfAbsent(key,value);
+   - get(k);
+   - getOrDefault(key,DefaultValue);
+   - containsKey(key);
+   - containValue(value);
+   - replace(key,value);
+   - replace(key,oldValue,newValue);
+   - remove(key);
+   - remove(key,value);
+   - clear();
+   
         
         
