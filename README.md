@@ -1,4 +1,4 @@
-# Java_Coding_Questions
+# Java_notes_for_Interview_Preparation
 This repository contain coding questions and solutions to practice. This may help you for clearing basic concepts of java and will also help you for your interview preparation.
 
 # Java_History
