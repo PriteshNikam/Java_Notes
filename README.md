@@ -772,13 +772,21 @@ Array, String, class, interface are non primitive data types.
   
   - Collection is available in java util package(import java.util.Collection).
   - It also provides some static methods for sorting,Searching, etc.
- 
+  
+  ![image](https://user-images.githubusercontent.com/83751098/169748091-68db5857-1a97-4355-bb7f-e93a6cb70797.png)
+  ![image](https://user-images.githubusercontent.com/83751098/169748116-6eb39c9f-ca4e-4738-a143-46f0bdfb598c.png)
+  ![image](https://user-images.githubusercontent.com/83751098/169748133-0bdf4aec-821d-4aed-8aa2-7ac4205ee906.png)
+  ![image](https://user-images.githubusercontent.com/83751098/169748176-96772b29-6be2-46ec-8dfa-a3f59445a600.png)
+
+ ### Below are mostly used collections in competitive coding and interview perspective -
   ## ArrayList - 
   - import java.util.ArrayList;
   - Elements are stored in contiguous location.
   - You could directly access elements.
   - ArrayList size incerease by 1.5 times.
   - better to access data with O(1) time complexity.
+  ![image](https://user-images.githubusercontent.com/83751098/169748600-be77be4e-75d4-460d-b173-97bc37e89c2b.png)
+
   - Syntax - 
     
         ArrayList<Integer> ar = new ArrayList<>();
@@ -797,6 +805,9 @@ Array, String, class, interface are non primitive data types.
   - deletion & insertion is fast.
   - Better to manipulate data.
   - To access element time complexity O(n/2).
+  
+![image](https://user-images.githubusercontent.com/83751098/169750525-6e53ef9d-e37d-4ed2-9d16-b70ffe775198.png)
+
   - Syntax - 
      
         LinkedList<String> l = new LinkedList<>();
@@ -813,6 +824,9 @@ Array, String, class, interface are non primitive data types.
    ## Stack - 
    - It is Last In First Out(LIFO).
    - it extends vector.
+   
+   ![image](https://user-images.githubusercontent.com/83751098/169748929-8ce69f4c-1541-4984-a358-5d4b1a070a83.png)
+
    - *Methods of stack -*
       - push(); -> to add element.
       - pop(); -> to delete element.
@@ -822,6 +836,9 @@ Array, String, class, interface are non primitive data types.
     
    ## Queue -
    - It is First In First Out(FIFO).
+   
+![image](https://user-images.githubusercontent.com/83751098/169750258-6d7d6757-5442-4bc6-b2d3-6557400a1646.png)
+
    - *Methods of Queue ->*
        - *Throw exception ->* 
         - add(); ->  add element.
@@ -838,6 +855,9 @@ Array, String, class, interface are non primitive data types.
    - This implement queue.
    - So if we use other methods it behave like queue.
    - Faster than stack because it is not synchronized.
+   
+![image](https://user-images.githubusercontent.com/83751098/169750156-6da26b6d-4931-4b2b-b313-afde87724899.png)
+
    - *methods of ArrayDeque ->*
      - addFirst(); -> add from front.
      - removeFirst(); -> remove from front.
@@ -854,6 +874,8 @@ Array, String, class, interface are non primitive data types.
      it removes according order(chronological order).
    - This happens because predefined comparator in priority queue.
    - To remove element according to user need to define comparator.
+   
+![image](https://user-images.githubusercontent.com/83751098/169750019-26af97e5-5601-4899-86f7-4aea3ecefc12.png)
 
    ## Set Interface - 
    - Donot allowed duplicate value.
@@ -878,19 +900,22 @@ Array, String, class, interface are non primitive data types.
          Map<Integer,Integer> map = new HashMap<>();
          
          Map<String,Integer> map2 = new HashMap<>();
-    
-   - put(key,value);
-   - putAll();
-   - putIfAbsent(key,value);
-   - get(k);
-   - getOrDefault(key,DefaultValue);
-   - containsKey(key);
-   - containValue(value);
-   - replace(key,value);
-   - replace(key,oldValue,newValue);
-   - remove(key);
-   - remove(key,value);
-   - clear();
+   
+   ![image](https://user-images.githubusercontent.com/83751098/169749360-7428e000-0ffb-453f-8d42-c2783a7ce95d.png)
+     
+   - methods in HashMap - 
+    - put(key,value);
+    - putAll();
+    - putIfAbsent(key,value);
+    - get(k);
+    - getOrDefault(key,DefaultValue);
+    - containsKey(key);
+    - containValue(value);
+    - replace(key,value);
+    - replace(key,oldValue,newValue);
+    - remove(key);
+    - remove(key,value);
+    - clear();
    
         
         
