@@ -903,7 +903,7 @@ Array, String, class, interface are non primitive data types.
    
    ![image](https://user-images.githubusercontent.com/83751098/169749360-7428e000-0ffb-453f-8d42-c2783a7ce95d.png)
      
-   - methods in HashMap - 
+  - methods in HashMap - 
     - put(key,value);
     - putAll();
     - putIfAbsent(key,value);
