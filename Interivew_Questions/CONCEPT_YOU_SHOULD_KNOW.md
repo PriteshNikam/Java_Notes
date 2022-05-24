@@ -54,4 +54,31 @@
   ->
    - equals() compare data.
    - == compare reference.
+ 
+ ### Difference in length & length()?
+ -> 
+  - length - it is variable used to find length of array.
+  - length() - it is final method used to find length of string.
+ 
+ ### instance & local variable?
+ -> 
+ - instance variable 
+   - variable which are accessible by all the methods in class.
+   - declared out side method & inside class.
+ - local variable
+   - variables which are present inside a block, function or constructor & can be accessed only inside them.
+   
+ ### Why java donot use pointer?
+ - pointers are quite unsafe.
+ - security is compared if pointer are used because user can directly access memory with pointers.
+ - usage of pointer can make garbage collection quite slow & incorrect manner.
+ - java make use of reference which cannot be manipulated like pointer.
+ 
+ ### What is Object of Garbage Collection -
+ - main object is to free up memory space occupied by unnessary & unreachable object by delete them.
+ - this ensure memory & resource is used efficiently but it provide no gurante ther would be sufficient memory for program execution.
+
+ ### What if we create two main methods?
+ - it is fine if we create two main method,but parameters should be different.
+ - method having parameter (String[] args) will be considered as main method.
            
