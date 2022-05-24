@@ -1,6 +1,6 @@
 # What is Object Oriented Progrmming(OOPs)?Give real time examples.
 ->
-  - OOPs is a methodology to design s program using classes & objects.
+  - OOPs is a methodology to design a program using classes & objects.
   - It  simplifies software development & maintenance by providing some concepts: 
     ### Object
     ### Class
@@ -10,7 +10,7 @@
     ### Encapsulation
   
   ## Object - 
-  - Any entity that has state & behaviour id known as object.
+  - Any entity that has state & behaviour is known as object.
   - It can by physical or logical.
   - An object can be defined as instance of class.
   - Allocate memory when created.
